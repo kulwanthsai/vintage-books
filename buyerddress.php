@@ -1,0 +1,12 @@
+<?php
+$con=mysqli_connect("localhost","root","","books");
+session_start();
+$_SESSION['bookname']=$_GET['name'];
+$_SESSION['sellername']=$_GET['seller'];
+$_SESSION['sc1']=$_GET['sc1'];
+$_SESSION['sc2']=$_GET['sc2'];
+$_SESSION['author']=$_GET['author'];
+$_SESSION['price']=$_GET['price'];
+$_SESSION['pages']=$_GET['pages'];
+header("location:buyerbuy.php");
+?>  
